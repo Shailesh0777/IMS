@@ -5,7 +5,7 @@ from django.contrib.auth.models import AbstractUser
 class User(AbstractUser):
     email = models.EmailField(unique=True)
     password = models.CharField(max_length=300)
-    username = models.CharField(max_length=100,default='username')g
+    username = models.CharField(max_length=100,default='username')
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username']
